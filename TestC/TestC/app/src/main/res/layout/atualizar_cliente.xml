@@ -2,59 +2,49 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:id="@+id/cadastrar_cliente"
-    tools:context="company.user.testc.Activity.MainActivity">
+    android:orientation="vertical">
 
     <EditText
-        android:id="@+id/edit_nome"
+        android:id="@+id/CompromissoUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nome"/>
 
     <EditText
-        android:id="@+id/edit_cidade"
+        android:id="@+id/DescricaoUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Cidade" />
 
     <EditText
-        android:id="@+id/edit_estado"
+        android:id="@+id/DataCompromissoUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Estado" />
 
     <EditText
-        android:id="@+id/edit_endereco"
+        android:id="@+id/PrioridadeCompromissoUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Endereço" />
 
     <EditText
-        android:id="@+id/edit_CNPJ"
+        android:id="@+id/checkBoxRealizadoUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="CNPJ (Opcional)" />
 
     <EditText
-        android:id="@+id/edit_CEP"
+        android:id="@+id/CEPUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="CEP" />
+        android:hint="CEP (Opcional)" />
 
     <Button
-        android:id="@+id/btnSalvarCliente"
+        android:onClick="removerProdutoUpdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Salvar"/>
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@android:color/darker_gray"
-        tools:listitem="@layout/recyclerview_item" />
-
 
 </LinearLayout>
